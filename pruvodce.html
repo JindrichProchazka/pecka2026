@@ -2,11 +2,240 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Průvodce Peckou</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #33384a;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 25px 10%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00aeca;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 50px 6%;
+    }
+
+    h1, h2 {
+      color: #00aeca;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 70px;
+      height: 4px;
+      background: #00aeca;
+      margin: 0 0 35px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 45px;
+      align-items: start;
+      margin-top: 40px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .note {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .section {
+      border-top: 1px solid #ddd;
+      margin-top: 55px;
+      padding-top: 45px;
+    }
+
+    .button {
+      background: #00aeca;
+      color: white;
+      padding: 16px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 20px;
+      display: inline-block;
+      margin-top: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    .green { color: green; font-weight: bold; }
+    .orange { color: #f0782f; font-weight: bold; }
+    .red { color: red; font-weight: bold; }
+    .blue { color: blue; font-weight: bold; }
+
+    @media (max-width: 850px) {
+      nav {
+        display: block;
+        text-align: center;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1, h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Průvodce Peckou</h1>
-  <p>Tahle stránka funguje.</p>
-  <a href="index.html">Zpět na domovskou stránku</a>
+
+<header>
+  <nav>
+    <div>
+      <strong>Nohejbalové soustředění Pecka</strong><br>
+      <small>"Dycky Pecka!"</small>
+    </div>
+
+    <div>
+      <a href="index.html">Domovská stránka</a>
+      <a href="pruvodce.html">Průvodce</a>
+      <a href="co-s-sebou.html">Co s sebou</a>
+      <a href="program.html">Program a účastníci</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <h1>Vše co musíš o Pecce vědět!</h1>
+  <div class="underline"></div>
+
+  <p>
+    Většinu užitečných a obecných informací najdete na oficiálním webu kempu:
+    <a href="https://www.kemppecka.cz/" target="_blank">https://www.kemppecka.cz/</a>
+  </p>
+
+  <h2>Nicméně jsou i věci, které se tam nedočtete!</h2>
+
+  <p class="note">
+    Na mapičce níže jsou zvýrazněny důležité body.<br>
+    Půjdeme postupně...
+  </p>
+
+  <div class="grid">
+    <div>
+      <img src="mapa-pecka.png" alt="Mapa kempu Pecka se zvýrazněnými body">
+    </div>
+
+    <div>
+      <p><span class="green">Zelená šipka</span> je příjezd do areálu.</p>
+      <p>
+        Tam bude brána a recepce. Zaparkujete na postranním parkovišti a buď se půjdete dovnitř nahlásit, že jste z „Nohejbalového oddílu Semily“, nebo dáte před příjezdem echo a bude o vás postaráno.
+      </p>
+      <p>
+        V případě, že v autě máte věci, ale nepotřebujete ho v areálu, poprosíte, jestli by nešlo projet a vyhodit věci. Po vyložení si z areálu vyjedete a můžete vůz nechat před recepcí na parkovišti.
+      </p>
+      <p>
+        V případě, že auto máte jako bydlení, či ho chcete mít u stanu, pak samozřejmě budete zpoplatněni a dostanete k tomu kartičku, se kterou jste schopni se dostat dovnitř a ven.
+      </p>
+
+      <p><span class="orange">Oranžový kruh</span> značí umývárnu. Jsou tam umyvadla, záchody, ale i sprchy.</p>
+      <p>Sprchy jsou na žetonky. Nutno koupit, dokud má recepce otevřeno.</p>
+
+      <p><span class="red">Červený kříž</span> je místo, kde tradičně rozkládáme stany a parkujeme vozy.</p>
+      <p>
+        Jedná se o strategické místo, kde je v blízkosti důležité zázemí a třeba i přípojka na elektřinu, kam si můžeme píchnout telefon, notebook atd. Nicméně doporučuju mít powerbanky a nenechávat tam telefony jen tak ležet.
+      </p>
+
+      <p>
+        <small>
+          Na recepci se vás budou ptát, jestli chcete elektrickou přípojku nebo ne. Tbh jsem to nikdy neplatil, nevím jak to funguje a elektřina tam je i tak. Tuto záhadu nechám pro jiné...
+        </small>
+      </p>
+
+      <p><span class="blue">Modrý kruh</span> je velmi důležité místo.</p>
+      <p>
+        Zde se odehrávají noční aktivity, obědvání, popíjení, grilování, ale také se zde nachází ledničky, plotýnka na vaření a další zásuvky.
+      </p>
+      <p>
+        Ledničky jsou velké průmyslové a můžeme je využívat. Plotýnka je indukční, takže doporučuju vzít si vlastní indukční pánvičku nebo hrnec.
+      </p>
+      <p>
+        Altánek má několik stolů, lavičky a dostatek prostoru. Úložný prostor na věci, které nepatří do ledničky, tam ale moc není. Ty budete nechávat nejspíš v autě/stanu, nebo položené na vrchu lednice.
+      </p>
+
+      <p><strong>Na zbytku mapky</strong> vidíme, kde jsou kurty, bazén atd.</p>
+      <p>
+        Vedle kurtů se nachází občerstvení, kde se dá koupit pivo/limo, něco k snědku, ale i třeba točená zmrzka.
+      </p>
+      <p>
+        Pokud chcete studovat rozložení ještě víc, doporučuju interaktivní mapu kempu:
+        <a href="https://www.kemppecka.cz/mapa-kempu/" target="_blank">mapa kempu</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Ceník</h2>
+    <div class="underline"></div>
+
+    <p>Aktuální ceny najdete níže v tabulce. Pro jistotu doporučuju ověřit i aktuální ceník na webu kempu.</p>
+
+    <img src="cenik-pecka.png" alt="Ceník kempu Pecka">
+
+    <p>
+      <a href="https://www.kemppecka.cz/stany/" target="_blank">Otevřít aktuální ceník na webu kempu</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Jedu prvně,</h2>
+    <div class="underline"></div>
+
+    <p>
+      nebo mě prostě jen zajímá víc, co je na Pecce za možnosti a jak to funguje:
+    </p>
+
+    <a class="button" href="jedu-prvne.html">Jedu prvně!</a>
+  </div>
+
+</main>
+
 </body>
 </html>
