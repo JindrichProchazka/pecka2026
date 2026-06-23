@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jedu prvně</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #33384a;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 25px 10%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00aeca;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 55px 7%;
+    }
+
+    h1, h2 {
+      color: #00aeca;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 45px;
+    }
+
+    .underline {
+      width: 70px;
+      height: 4px;
+      background: #00aeca;
+      margin: 0 0 35px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .card {
+      border-left: 4px solid #00aeca;
+      padding-left: 20px;
+    }
+
+    .button {
+      background: #00aeca;
+      color: white;
+      padding: 16px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 20px;
+      display: inline-block;
+      margin-top: 25px;
+      font-family: Arial, sans-serif;
+    }
+
+    .button:hover {
+      background: #008ba0;
+    }
+
+    @media (max-width: 850px) {
+      nav {
+        display: block;
+        text-align: center;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div>
+      <strong>Nohejbalové soustředění Pecka</strong><br>
+      <small>"Dycky Pecka!"</small>
+    </div>
+
+    <div>
+      <a href="index.html">Domovská stránka</a>
+      <a href="pruvodce.html">Průvodce</a>
+      <a href="co-s-sebou.html">Co s sebou</a>
+      <a href="program.html">Program a účastníci</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Jedu prvně, nebo si chci jen počíst...</h1>
+  <div class="underline"></div>
+
+  <div class="grid">
+    <div>
+      <h2>Obecné informace</h2>
+
+      <p>
+        Jedná se o historickou akci, jejíž kořeny sahají podle tradice někam k Mezopotámii. Vznikla jako nohejbalové soustředění oddílu Semily a desítky let se nesla ve velmi podobném duchu.
+      </p>
+
+      <p>
+        Doba se ale mění, a tak se mění i tradice. Nohejbal stále zní napříč celým pobytem na Pecce, ale množství čistokrevných nohejbalistů postupně klesá. Proto přichází na řadu multifunkčnost areálu, který nabízí i spoustu dalších aktivit.
+      </p>
+
+      <h2>Co se dá na Pecce dělat</h2>
+
+      <ul>
+        <li>Antukové kurty — nohejbal, tenis, volejbal</li>
+        <li>Beach — plážový volejbal</li>
+        <li>Lezecká stěna</li>
+        <li>Pingpongový stůl</li>
+        <li>Okolní příroda — běh, cyklistika, hike</li>
+        <li>U name it, je toho prostě dost...</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Užitečné informace</h2>
+
+      <div class="card">
+        <h3>Stravování</h3>
+
+        <p>Dá se provést mnoha způsoby:</p>
+
+        <p>
+          V areálu jsou plotýnky, na kterých si každý může vařit svoje. Stejně tak jsou k dispozici erární grily nebo mikrovlnky.
+        </p>
+
+        <p>
+          V areálu je také občerstvení, kde se dá koupit hotovka nebo si případně něco objednat. Nevím přesně, jak to funguje, takže kdyby byl zájem, dejte vědět.
+        </p>
+
+        <p>
+          Další možností jsou okolní hospody a restaurace. Dá se dojít přímo do Pecky, což bylo loni úspěšně otestováno i se dvěma basami piva v rukách. Případně se dá vyrazit i na kopec U Myšáka.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Noční / denní klid</h3>
+
+        <p>
+          Ať chceme nebo ne, jedná se o rodinný kemp. To s sebou nese určité komplikace a omezení. AVŠAK!
+        </p>
+
+        <p>
+          Není potřeba se toho bát. Každý rok jsou nějaké trable, ale každý rok stačí najít řešení selským rozumem.
+        </p>
+
+        <p>
+          Ať už se jedná o zpruzené učitele základních škol, naštvané tatínky, co jim stará dlouho nedala, nebo prostě jen milovníky konfliktů, tak v podstatě vždy byla situace vyřešena v klidu. Majitelé kempu pro nás mají až překvapivě velké pochopení.
+        </p>
+
+        <p>
+          Ok, loni byla výjimka. To tam Smejky málem sundal toho dědulu, co se do mě sr*l za pivo v ruce.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <a class="button" href="index.html">Zpět na domovskou stránku</a>
+</main>
+
+</body>
+</html>
