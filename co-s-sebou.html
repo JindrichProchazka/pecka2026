@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Co s sebou</title>
 
+<style>
+
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    color:#3a3f54;
+    line-height:1.8;
+}
+
+header{
+    background:#222;
+    color:white;
+    padding:25px 10%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00b4d8;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 8%;
+}
+
+h1,h2{
+    color:#00b4d8;
+    font-weight:normal;
+}
+
+h1{
+    text-align:center;
+    font-size:56px;
+}
+
+h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.line{
+    width:80px;
+    height:4px;
+    background:#00b4d8;
+    margin-bottom:35px;
+}
+
+.intro{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    margin-bottom:60px;
+}
+
+.section{
+    margin-bottom:70px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.stefa{
+    width:220px;
+    border-radius:20px;
+    float:right;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:40px;
+    background:#00b4d8;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:20px;
+}
+
+.button:hover{
+    background:#0097b8;
+}
+
+@media(max-width:900px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.stefa{
+    float:none;
+    display:block;
+    margin:auto;
+}
+
+h1{
+    font-size:40px;
+}
+
+h2{
+    font-size:34px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div>
+<strong>Nohejbalové soustředění Pecka</strong><br>
+<small>"Dycky Pecka!"</small>
+</div>
+
+<div>
+<a href="index.html">Domovská stránka</a>
+<a href="pruvodce.html">Průvodce</a>
+<a href="co-s-sebou.html">Co s sebou</a>
+<a href="#">Program a účastníci</a>
+<a href="#">Kontakt</a>
+</div>
+
+</nav>
+</header>
+
+<div class="container">
+
+<h1>Co s sebou?</h1>
+
+<div class="intro">
+Záleží na délce pobytu, preferovaném sportu a vlastních potřebách.
+Nicméně nějaký obecný seznam věcí by mohl vypadat zhruba takto:
+</div>
+
+<div class="section">
+
+<h2>Povinná výbava</h2>
+<div class="line"></div>
+
+<ul>
+<li>Doklady (pro nové členy registrace na recepci)</li>
+<li>Peníze / platební karta</li>
+<li>Mobilní telefon</li>
+<li>Nabíječka</li>
+<li>Oblečení na několik dní</li>
+<li>Teplé oblečení na večer (mikina, bunda, dlouhé kalhoty, ponožky)</li>
+<li>Dostatek sportovního oblečení</li>
+<li>Boty na sport, chůzi i k vodě</li>
+<li>Ručník (ideálně dva)</li>
+<li>Hygienické potřeby</li>
+</ul>
+
+</div>
+
+<div class="grid">
+
+<div>
+
+<h2>Jídlo a vaření</h2>
+<div class="line"></div>
+
+<img src="stefan.png" class="stefa">
+
+<ul>
+<li>Chlast (hydratace je důležitá)</li>
+<li>Něco na gril</li>
+<li>Snídaně na ráno</li>
+</ul>
+
+<p>
+V areálu jsou lednice a možnost vaření včetně erárního vybavení,
+ale vlastní se hodí:
+</p>
+
+<ul>
+<li>Vlastní pánvička nebo hrnec (indukční)</li>
+<li>Něco na co položit jídlo</li>
+<li>Něco čím jídlo sníst</li>
+</ul>
+
+<h2>Sport</h2>
+<div class="line"></div>
+
+<ul>
+<li>Sportovní oblečení a boty</li>
+<li>Beach volejbal – brýle, plavky, žabky</li>
+<li>Lezení – lano, sedák, lezačky, mágo (většinu lze půjčit)</li>
+<li>Míč</li>
+<li>Pingpongové pálky</li>
+<li>Badmintonové rakety</li>
+<li>Tenisové rakety</li>
+<li>Cokoliv dalšího co tě napadne</li>
+</ul>
+
+</div>
+
+<div>
+
+<h2>Spaní</h2>
+<div class="line"></div>
+
+<ul>
+<li>Stan / auto / spolubydlení</li>
+<li>Karimatka</li>
+<li>Spacák</li>
+<li>Polštářek</li>
+</ul>
+
+<h2>Doporučené</h2>
+<div class="line"></div>
+
+<ul>
+<li>Powerbanka</li>
+<li>Kelímky plastové</li>
+<li>Repelent</li>
+<li>Opalovací krém</li>
+<li>Sluneční brýle</li>
+<li>Kšiltovka</li>
+<li>Pláštěnka</li>
+<li>Čelovka nebo baterka</li>
+<li>Deka k vodě</li>
+<li>Stolní hry</li>
+<li>Bluetooth reprák</li>
+<li>Káva nebo něco na ranní probuzení</li>
+</ul>
+
+</div>
+
+</div>
+
+<a class="button" href="index.html">
+Zpět na domovskou stránku
+</a>
+
+</div>
+
+</body>
+</html>
